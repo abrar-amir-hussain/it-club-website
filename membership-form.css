@@ -1,0 +1,195 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "montserrat";
+}
+.membership-section{
+	background: url("img/bg4.jpg") no-repeat center;
+	background-size: cover;
+	padding:  0;
+	height: 100vh;
+	
+}
+.heading-moveright{
+	animation-name: moveright;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+}
+@keyframes moveright{
+0%{
+	opacity: 0;
+	transform: translateX(-100px);
+}
+80%{
+	transform: translateX(20px);
+}
+100%{
+opacity: 1;
+transform: translateX(0);
+}
+}
+.heading-moveleft{
+	animation-name: moveleft;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+}
+@keyframes moveleft{
+0%{
+	opacity: 0;
+	transform: translateX(100px);
+}
+80%{
+	transform: translateX(-20px);
+}
+100%{
+opacity: 1;
+transform: translateX(0);
+}
+}
+/*starts menu hamburger*/
+#menu-bar{
+	margin-top: 40px;
+	margin-left: 30px;
+
+}
+#menu{
+	width: 50px;
+	height: 60px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 7px;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-6px);
+}
+#bar3{
+	transform: translateY(6px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+	
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 4;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#585659,#787678);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 8;	
+}
+.change-bg{
+	width: 660px;
+	height: 600px;
+	transform: translate(-60%,-30%);
+	
+}
+.change .bar{
+	background-color: white;
+
+}
+.change #bar1{
+	transform: translateY(6px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+	/*ends menu hamburger*/
+.membership-section h1{
+	text-align: center;
+	color: #ddd;
+	font-size: 3rem;
+
+}
+@media screen and (max-width: 470px){
+	.membership-section h1{
+		font-size: 1.5rem;
+	}
+}
+
+.contact-form-text::placeholder{
+	color: black;
+}
+.border{
+	width: 100px;
+	height: 10px;
+	background: rgba(6, 89, 151,.6);
+	margin: 40px auto;
+
+}
+.contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.contact-form-text{
+	display: block;
+	margin: 16px 0;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	color: #ddd;
+	background: rgba(246, 243, 246,.6);
+	padding: 20px 40px;
+	transition: .5s;
+	border-radius: 20px;
+
+}
+.contact-form-text:focus{
+	box-shadow: 0 0 10px 4px #34495e
+}
+textarea.contact-form-text{
+	resize: none;
+	height: 120px;
+
+
+	}
+	.contact-form-btn{
+		background: #6B59F1;
+		color: #fff;
+		padding: 12px 40px;
+		border-radius: 20px;
+		transition: .5s;
+		border:0;
+		float: right;
+
+	}
+	.contact-form-btn:hover{
+		background: #5A6268;
+	}

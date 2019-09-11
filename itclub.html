@@ -8,15 +8,39 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://kit.fontawesome.com/c2cf41eebe.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
 	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 	<header class="header" id="header">
+		<!--menu hamburger-->
+		<div id="menu-bar">
+			<div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<ul class="nav" id="nav">
+				<li><a href="itclub.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="hover-image.html">Events</a></li>
+				<li><a href="membership-form.html">Become A Member</a></li>
+				<li><a href="card.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+		<script src="itclub.js">
+			
 		
-		<div class="banner">
+		</script>
+		<!--ends-->
+		
+		<div class="banner" >
 			<div class="banner-logo"><img src="img/logo11.png"></div>
 			<h1 class="banner-title-1 banner-title">ADAMJEE CANTONMENT COLLEGE IT CLUB</h1>
-			<h1 class="banner-title-2 banner-title">The Club Everyone Cherish For</h1>
+			<h1 class="banner-title-2 banner-title">The Club Everyone Cherishes For</h1>
 			
 
 		</div>
@@ -26,40 +50,96 @@
 			</video>
 		</article>
 	</header>
-<div class="parallax1">
+<div class="parallax1" id="about">
 		<div class="heading">INTRODUCTION</div>
 	</div>
 	<section class="dark"><div data-aos="fade-up">
-		<h2><img src="acclogo.png" class="acclogo">About Adamjee college</h2>
+		<h2><img src="img/acclogo.png" class="acclogo">About Adamjee college</h2>
 		<p>Adamjee Cantonment College is a renowned and well established educational institution of our country and managed by Bangladesh Army. It is crowned with the glory of passing over half a century in the field of education. The institution has earned the rare prestige of being one of the top ranking colleges of our country for its outstanding academic achievements in the recent years. In 2014, the college was recognized as the best college among 29 colleges run by Bangladesh Army based on academic and extracurricular performances. Besides academic achievements, our students are also bringing laurels in the field of extracurricular activities by competing against renowned institutions.</p></div>
 	</section>
 	<div class="parallax2">
 		<div class="heading">INTRODUCTION TO IT CLUB</div>
 	</div>
 	<section class="dark" > <div data-aos="fade-up">
-		<h2><img src="logo11.png" class="letter-logo">About IT Club</h2>
+		<h2><img src="img/logo11.png" class="letter-logo">About IT Club</h2>
 		<p>"ACC IT CLUB" is a student body that inspire and empower students of Adamjee Cantonment College to be involved in IT related tasks and knowledge sharing. This also applies to expand their knowledge about Information and Technology. This club will also have been organizing many IT related events in Adamjee Cantonment College and has participated to different IT related programs to other institutions for expressing these motives more clearly and also imparting inspiration and knowledge along with potential of IT. It will also make use of the potential Adamjee Cantonment College students have in IT related fields. Our Passive task will also be to help other clubs in IT related tasks.</p></div>
 	</section>
 	<section class="events">
 		<div class="event-banner" data-aos="fade-up">
 			<h2 class="event-title">EVENTS,MEETUPS,WORKSHOPS</h2>
-			<a class="event-button" href="#">TAKE A LOOK</a>
+			<a class="event-button" href="hover-image.html">TAKE A LOOK</a>
 		</div>
+
+</section>
+
+		<section class="animated-cards">
+			<h2 class="cutout" data-aos="zoom-in-down">Mecanism</h2>
+			<div class="container">
+  <div class="card" data-aos="zoom-in-right">
+    <div class="face face1">
+      <div class="content">
+        <img src="img/sketch.png">
+        <h3>Design</h3>
+      </div>
+    </div>
+     <div class="face face2">
+      <div class="content">
+        <p>Adamjee Cantonment College is a renowned and well established educational institution of our country and managed by Bangladesh Army.  </p>
+        <a href="#">Read More</a>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="card" data-aos="zoom-in">
+    <div class="face face1">
+      <div class="content">
+        <img src="img/layers.png">
+        <h3>Graphics</h3>
+      </div>
+    </div>
+     <div class="face face2">
+      <div class="content">
+        <p>Adamjee Cantonment College is a renowned and well established educational institution of our country and managed by Bangladesh Army.   </p>
+        <a href="#">Read More</a>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="card" data-aos="zoom-in-left">
+    <div class="face face1">
+      <div class="content">
+        <img src="img/data.png">
+        <h3>Coding</h3>
+      </div>
+    </div>
+     <div class="face face2">
+      <div class="content">
+        <p>Adamjee Cantonment College is a renowned and well established educational institution of our country and managed by Bangladesh Army.   </p>
+        <a href="#">Read More</a>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+		
 	</section>
 	<section class="team">
 		<div class="team-container"  >
-			<h1 class="team-title">OUR TEAM</h1>
-			<p class="team-writing">
+			<h1 class="team-title"  data-aos="zoom-in-down">OUR TEAM</h1>
+			<p class="team-writing"  data-aos="zoom-in-up">
 				Our Team consists of a Moderator, Adviser and Technology Enthusiast students. A portion of skilled students form the panel consting of 10-50 members. The club consists more than 500 General Members from each batch. The club runs through the particiaption of both panel and general members.
 			</p>
-			<div class="team-button">
-			<button class="team-button-1 btn"><a href="#" class="t-button">Panel-members</a><i class="fas fa-people-carry"></i></button>
-			<button class="team-button-2 btn"><a href="#" class="t-button">Become a member</a><i class="fas fa-user-check"></i></button>
+			<div class="team-button"  data-aos="zoom-in-down">
+			<button class="team-button-1 btn"><a href="card.html" class="t-button">Panel-members</a><i class="fas fa-people-carry"></i></button>
+			<button class="team-button-2 btn"><a href="membership-form.html" class="t-button">Become a member</a><i class="fas fa-user-check"></i></button>
 		</div>
 		</div>
 	</section>
 	<section class="contact">
-		<h1 class="contact-title" >Find us at?</h1>
+		<h1 class="contact-title" data-aos="zoom-in-down">Find us at?</h1>
 		<div class="contact-container">
 		<div class="map"><div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.683253643705!2d90.39245261498218!3d23.794291084567714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73d8f078209%3A0xce1bf2a261843766!2z4KaG4Kam4Kau4Kac4KeAIOCmleCnjeCmr-CmvuCmqOCnjeCmn-CmqOCmruCnh-CmqOCnjeCmnyDgppXgprLgp4fgppw!5e0!3m2!1sen!2sbd!4v1566046446152!5m2!1sen!2sbd" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
 		<div class="contact-message"><div class="location"><i class="fas fa-map-marker-alt"></i><br>Adamjee Cantonment College,

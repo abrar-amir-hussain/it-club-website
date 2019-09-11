@@ -1,0 +1,194 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+
+}
+/*hamburger starts
+
+*/
+#menu-bar{
+	margin-top: 40px;
+	margin-left: 30px;
+
+}
+#menu{
+	width: 50px;
+	height: 60px;
+	margin: 25px 0 15px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 7px;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-6px);
+}
+#bar3{
+	transform: translateY(6px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+	font-size:1.2rem; 
+	
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 4;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#585659,#787678);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 8;	
+}
+.change-bg{
+	width: 660px;
+	height: 600px;
+	transform: translate(-60%,-30%);
+	
+}
+.change .bar{
+	background-color: white;
+
+}
+.change #bar1{
+	transform: translateY(6px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+/*ends*/
+.banner-card-container{
+	background-image: linear-gradient(to right,rgba(89, 87, 89,.7),rgba(142, 139, 142,.6)),url('img/adamjee.jpg');
+	max-width: 100%;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 90%;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	height: 45vh;
+
+
+
+}
+.card-banner-title{
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+}
+@media screen and (max-width: 470px){
+	.card-banner-title{
+	font-size:1rem;
+}
+}
+.heading-event2{
+	font-weight: 600;
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+	font-family: cursive;
+	letter-spacing: 2px;
+	position: relative;
+}
+.heading-event2::after{
+	content: "";
+	height: 3px;
+	width: 30%;
+	background:black;
+	position: absolute;
+	left: 40%;
+	bottom: 0;
+	}
+.container{
+	max-width: 1280px;
+	margin: 70px auto 0; 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container .box{
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	background-color: grey;
+}
+.container .box .imgbox{
+	position: relative;
+	overflow: hidden;
+	
+}
+.container .box .imgbox img{
+	height: 300px;
+	transition: transform 2s;
+	max-width: 100%;
+
+	background-size: cover;
+	
+	
+	
+}
+.container .box .imgbox img:hover{
+	transform: scale(1.2);
+}
+.container .box .details{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	background:rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details {
+	transform: scaleY(1);
+}
+
+.container .box .details .content{
+	position: absolute;
+	top: 50%;
+	padding: 10px;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
